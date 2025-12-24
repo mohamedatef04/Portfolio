@@ -308,7 +308,7 @@ Modify CSS variables in `style.css`:
 For questions, suggestions, or collaboration opportunities:
 - **Email**: mohamedrashadhyg@gmail.com
 - **WhatsApp**: Available via portfolio contact section
-- **LinkedIn**: [Mohamed Rashad](https://linkedin.com/in/mohamed-rashad-2bb024288)
+- **LinkedIn**: [Mohamed Atef](https://linkedin.com/in/mohamed-rashad-2bb024288)
 
 ---
 

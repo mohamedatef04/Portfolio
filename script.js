@@ -5,13 +5,13 @@ const themeToggleBtn = document.getElementById('themeToggle');
 
 function setTheme(mode) {
   root.setAttribute('data-theme', mode);
-  try { localStorage.setItem(THEME_KEY, mode); } catch {}
+  try { localStorage.setItem(THEME_KEY, mode); } catch { }
   themeToggleBtn.innerHTML = mode === 'dark' ? '<i class="ti ti-sun"></i>' : '<i class="ti ti-moon-stars"></i>';
 }
 
 (function initTheme() {
   let saved = 'dark';
-  try { saved = localStorage.getItem(THEME_KEY) || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); } catch {}
+  try { saved = localStorage.getItem(THEME_KEY) || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); } catch { }
   setTheme(saved);
 })();
 
@@ -68,7 +68,7 @@ function el(html) {
 }
 
 function sanitize(str) {
-  return (str || '').toString().replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[s]));
+  return (str || '').toString().replace(/[&<>"']/g, s => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', '\'': '&#39;' }[s]));
 }
 
 
@@ -82,23 +82,23 @@ class ParticleSystem {
     this.ctx = canvas.getContext('2d');
     this.particles = [];
     this.mouse = { x: 0, y: 0 };
-    
+
     this.resize();
     this.init();
     this.animate();
-    
+
     window.addEventListener('resize', () => this.resize());
     window.addEventListener('mousemove', (e) => {
       this.mouse.x = e.clientX;
       this.mouse.y = e.clientY;
     });
   }
-  
+
   resize() {
     this.canvas.width = window.innerWidth;
     this.canvas.height = window.innerHeight;
   }
-  
+
   init() {
     for (let i = 0; i < 50; i++) {
       this.particles.push({
@@ -111,33 +111,33 @@ class ParticleSystem {
       });
     }
   }
-  
+
   animate() {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    
+
     this.particles.forEach(particle => {
       particle.x += particle.vx;
       particle.y += particle.vy;
-      
+
       if (particle.x < 0 || particle.x > this.canvas.width) particle.vx *= -1;
       if (particle.y < 0 || particle.y > this.canvas.height) particle.vy *= -1;
-      
+
       // Mouse interaction
       const dx = this.mouse.x - particle.x;
       const dy = this.mouse.y - particle.y;
       const distance = Math.sqrt(dx * dx + dy * dy);
-      
+
       if (distance < 100) {
         particle.x -= dx * 0.001;
         particle.y -= dy * 0.001;
       }
-      
+
       this.ctx.beginPath();
       this.ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
       this.ctx.fillStyle = `rgba(124, 92, 255, ${particle.opacity})`;
       this.ctx.fill();
     });
-    
+
     requestAnimationFrame(() => this.animate());
   }
 }
@@ -172,7 +172,7 @@ document.addEventListener('mouseup', () => cursorFollower?.classList.remove('act
 function typeWriter(element, text, speed = 100) {
   let i = 0;
   element.textContent = '';
-  
+
   function type() {
     if (i < text.length) {
       element.textContent += text.charAt(i);
@@ -187,7 +187,7 @@ function typeWriter(element, text, speed = 100) {
 function animateCounter(element, target, duration = 2000) {
   let start = 0;
   const increment = target / (duration / 16);
-  
+
   function updateCounter() {
     start += increment;
     if (start < target) {
@@ -209,7 +209,7 @@ function initCreativeEffects(data) {
       typeWriter(nameEl, data.personal_info.name, 80);
     }
   }, 1000);
-  
+
   // Counter animations
   setTimeout(() => {
     const counters = document.querySelectorAll('.animated-counter');
@@ -289,14 +289,14 @@ document.addEventListener('keydown', (e) => {
   if (terminalVisible && e.target.id === 'terminalInput' && e.key === 'Enter') {
     const command = e.target.value.toLowerCase().trim();
     const inputLine = e.target.parentElement;
-    
+
     if (command) {
       const output = terminalCommands[command] || `Command not found: ${command}. Type 'help' for available commands.`;
-      
+
       if (command !== 'clear' && command !== 'exit') {
         const outputEl = el(`<div class="terminal-output">${typeof output === 'function' ? output() : output}</div>`);
         inputLine.parentNode.insertBefore(outputEl, inputLine);
-        
+
         const newInputLine = el(`
           <div class="terminal-input-line">
             <span class="prompt">visitor@portfolio:~$</span>
@@ -327,58 +327,58 @@ async function loadDataWithEffects() {
   const mainContent = document.getElementById('mainContent');
   const progressBar = document.getElementById('progressBar');
   const loadingText = document.querySelector('.loading-text');
-  
+
   try {
     // Show loading progress
     updateProgress(10, 'Initializing...');
-    
+
     // Simulate some loading time for better UX
     await new Promise(resolve => setTimeout(resolve, 500));
     updateProgress(30, 'Fetching data...');
-    
+
     // Fetch data from JSON
     const res = await fetch('data.json');
     const data = await res.json();
-    
+
     updateProgress(60, 'Processing content...');
     await new Promise(resolve => setTimeout(resolve, 300));
-    
+
     // Call the original loadData function with the fetched data
     await loadDataWithData(data);
-    
+
     updateProgress(80, 'Initializing features...');
     await new Promise(resolve => setTimeout(resolve, 200));
-    
+
     // Then initialize creative effects
     initCreativeEffects(data);
-    
+
     updateProgress(100, 'Ready!');
     await new Promise(resolve => setTimeout(resolve, 300));
-    
+
     // Hide loading screen and show main content
     loadingScreen.classList.add('fade-out');
     mainContent.style.opacity = '1';
     mainContent.style.visibility = 'visible';
-    
+
     // Remove loading screen from DOM after animation
     setTimeout(() => {
       if (loadingScreen.parentNode) {
         loadingScreen.parentNode.removeChild(loadingScreen);
       }
     }, 500);
-    
+
     // Show welcome toast
     setTimeout(() => {
       showToast('Welcome to my portfolio! ✨');
     }, 1000);
-    
+
   } catch (error) {
     console.error('Error loading data:', error);
     updateProgress(0, 'Error loading data');
     loadingText.textContent = 'Failed to load portfolio';
     loadingText.style.color = '#ff4757';
   }
-  
+
   function updateProgress(percentage, text) {
     progressBar.style.width = percentage + '%';
     loadingText.textContent = text;
@@ -396,7 +396,7 @@ async function loadDataWithData(data) {
 
   document.getElementById('projectsNum').textContent = data.projects.length;
   document.getElementById('experienceNum').textContent = data.experience_num;
-  document.getElementById('customersNum').textContent = data.customers_num;
+
 
   document.getElementById('aboutMe').textContent = data.personal_info.about_me;
   document.getElementById('location').textContent = data.personal_info.location;
@@ -415,14 +415,14 @@ async function loadDataWithData(data) {
 
   const cv = document.getElementById('cvDownload');
   cv.href = data.personal_info.cv_download;
-  
+
   // LinkedIn link in contact section
   const linkedinLink = data.personal_info.social_links.find(link => link.platform === 'LinkedIn');
   const linkedinA = document.getElementById('linkedin');
-  
+
   if (linkedinLink) {
     linkedinA.href = linkedinLink.url;
-    linkedinA.textContent = 'Mohamed Rashad';
+    linkedinA.textContent = 'Mohamed Atef';
   }
 
   // Social Links
@@ -477,7 +477,7 @@ async function loadDataWithData(data) {
           <div class="links">${(p.links || []).map(l => `<a class="link" href="${sanitize(l.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()"><i class="ti ti-external-link"></i><span>${sanitize(l.type)}</span></a>`).join('')}</div>
         </div>
       </article>`);
-    
+
     // Add click event for navigation to dynamic project details page
     card.addEventListener('click', () => {
       const projectName = p.name.toLowerCase()
@@ -529,7 +529,7 @@ function getSkillProficiency(skill) {
     'Architecture': 82, 'MVVM': 84, 'Clean': 86, 'OOP': 88, 'SOLID': 84,
     'Git': 85, 'Testing': 76, 'UI': 86, 'Widget': 84, 'API': 80
   };
-  
+
   for (const [key, value] of Object.entries(proficiencyMap)) {
     if (skill.toLowerCase().includes(key.toLowerCase())) return value;
   }
@@ -568,34 +568,34 @@ function categorizeSkills(skills) {
       skills: []
     }
   };
-  
+
   skills.forEach(skill => {
     let categorized = false;
-    
+
     // Check each category
     Object.keys(categories).forEach(categoryKey => {
       const category = categories[categoryKey];
-      if (!categorized && category.keywords.some(keyword => 
+      if (!categorized && category.keywords.some(keyword =>
         skill.toLowerCase().includes(keyword.toLowerCase())
       )) {
         category.skills.push(skill);
         categorized = true;
       }
     });
-    
+
     // If not categorized, add to tools as default
     if (!categorized) {
       categories.tools.skills.push(skill);
     }
   });
-  
+
   return categories;
 }
 
 // Create Simple Skill Chip
 function createSimpleSkillChip(skill) {
   const icon = getSkillIcon(skill);
-  
+
   const skillChip = el(`
     <div class="simple-chip">
       <div class="simple-chip__icon">
@@ -604,19 +604,19 @@ function createSimpleSkillChip(skill) {
       <span>${sanitize(skill)}</span>
     </div>
   `);
-  
+
   // Add click interaction
   skillChip.addEventListener('click', () => {
     showToast(`${skill} - One of my core technologies! 🚀`);
   });
-  
+
   return skillChip;
 }
 
 // Create Simple Technical Skills with Categories
 function createEnhancedTechnicalSkills(skills) {
   const categories = categorizeSkills(skills);
-  
+
   // Frontend Skills
   const frontendContainer = document.getElementById('frontendSkills');
   if (frontendContainer && categories.frontend.skills.length > 0) {
@@ -625,7 +625,7 @@ function createEnhancedTechnicalSkills(skills) {
       frontendContainer.appendChild(skillChip);
     });
   }
-  
+
   // Backend Skills
   const backendContainer = document.getElementById('backendSkills');
   if (backendContainer && categories.backend.skills.length > 0) {
@@ -634,7 +634,7 @@ function createEnhancedTechnicalSkills(skills) {
       backendContainer.appendChild(skillChip);
     });
   }
-  
+
   // Tools Skills
   const toolsContainer = document.getElementById('toolsSkills');
   if (toolsContainer && categories.tools.skills.length > 0) {

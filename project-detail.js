@@ -72,8 +72,8 @@ function showError(message) {
 // Populate project data
 function populateProjectData(project) {
   // Update page title
-  document.getElementById('pageTitle').textContent = `${project.name} | Mohamed Rashad`;
-  document.title = `${project.name} | Mohamed Rashad`;
+  document.getElementById('pageTitle').textContent = `${project.name} | Mohamed Atef`;
+  document.title = `${project.name} | Mohamed Atef`;
 
   // Update hero section
   document.getElementById('projectTitle').textContent = project.name;
