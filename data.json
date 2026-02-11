@@ -21,7 +21,7 @@
     "cv_download": "assets/downloads/Mohamed-Atef-Ali-Resume.pdf",
     "about_me": "A Flutter Developer with +2 years of experience building high-performance cross-platform mobile applications. Proficient in state management, Firebase integration, and applying clean architecture principles. Committed to delivering intuitive user experiences and collaborating effectively to achieve project goals."
   },
-  "projects_num": "8",
+  "projects_num": "10",
   "experience_num": "2",
   "skills": {
     "soft_skills": [
@@ -76,6 +76,322 @@
     }
   ],
   "projects": [
+    {
+      "name": "Mr. Price",
+      "cover_image": "assets/screenshots/mr_price/mockup.jpeg",
+      "short_description": "A comprehensive e-commerce and retail platform specialized in health, beauty, and household products, featuring specialized pricing for different customer tiers.",
+      "description": "Mr. Price is a comprehensive e-commerce and retail platform specializing in health, beauty, and household products. It features a dynamic product catalog with category browsing, brand filtering, and real-time search. A key feature is the specialized pricing system for different customer tiers (Pharmacies, Large Clients, etc.). The app is built with Flutter using BLoC for state management and GoRouter for navigation, integrating Firebase and REST APIs for a robust backend. It also offers a modern, bilingual (English/Arabic) responsive UI with smooth animations and an adaptive scaling system.",
+      "features": [
+        "Comprehensive e-commerce platform for health, beauty, and household products",
+        "Specialized pricing for different customer tiers (Pharmacies, Large Clients, etc.)",
+        "Dynamic product catalog with category and brand filtering",
+        "Real-time product search",
+        "Scalable state management using BLoC",
+        "Advanced navigation with GoRouter",
+        "Firebase Integration (Authentication & Cloud Messaging)",
+        "REST API integration using Dio",
+        "Local storage for cart and settings",
+        "Custom adaptive scaling system for mobile and tablet",
+        "Bilingual support (English/Arabic)",
+        "Modern UI with image caching and skeleton loading states"
+      ],
+      "technologies_used": [
+        "Flutter",
+        "BLoC",
+        "GoRouter",
+        "Firebase Auth",
+        "Firebase Cloud Messaging",
+        "Dio (REST APIs)",
+        "Local Storage",
+        "Image Caching",
+        "Skeleton Loading"
+      ],
+      "links": [
+        {
+          "type": "APP APK",
+          "url": "https://drive.google.com/file/d/1oXL9ufS64cX-n8pXIlqxKvEuO67zhYjh/view?usp=drive_link"
+        }
+      ],
+      "media": [
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/mockup.jpeg"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770808763.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770808782.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770808785.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770808788.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770808791.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770808793.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770808797.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809070.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809119.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809154.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809166.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809187.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809243.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809250.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809255.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809265.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809272.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809283.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809286.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809293.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809297.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809315.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809329.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809334.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809343.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809346.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809350.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809354.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809369.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809374.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809382.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/mr_price/Screenshot_1770809387.png"
+        }
+      ]
+    },
+    {
+      "name": "3la Feen",
+      "cover_image": "assets/screenshots/3la_feen/mockup.jpeg",
+      "short_description": "Developed a real-time ride-hailing application using Flutter and Supabase with dual-role interfaces for Drivers and Passengers.",
+      "description": "3la Feen is a comprehensive ride-hailing application developed using Flutter and Supabase. It features dual-role interfaces for both Drivers and Passengers, managing the full trip lifecycle from request to payment and rating. The app integrates Google Maps API for live tracking and route visualization, Firebase Cloud Messaging (FCM) for instant updates, and spending reminders. Built with scalable state management using Bloc/Cubit and optimized navigation with GoRouter, it offers a modern, responsive UI with light/dark modes and smooth animations.",
+      "features": [
+        "Dual-role interfaces for Drivers and Passengers",
+        "Real-time trip lifecycle management (request to payment/rating)",
+        "Scalable state management using Bloc/Cubit",
+        "Supabase Integration (Auth, Realtime DB, Storage)",
+        "Google Maps API for live tracking and route visualization",
+        "Firebase Cloud Messaging (FCM) for instant trip updates",
+        "Advanced live tracking with polyline rendering",
+        "Spending reminders and notifications via FCM & Supabase",
+        "Safe state emission handling for system stability",
+        "Optimized navigation using GoRouter (Role-based & Deep linking)",
+        "Modern, responsive UI (Light/Dark mode, Shimmer, Lottie)"
+      ],
+      "technologies_used": [
+        "Flutter",
+        "Supabase",
+        "Bloc/Cubit",
+        "Google Maps API",
+        "Firebase Cloud Messaging (FCM)",
+        "GoRouter",
+        "Shimmer & Lottie",
+        "Dart"
+      ],
+      "links": [
+        {
+          "type": "APP APK",
+          "url": "https://drive.google.com/file/d/18aqNgt6uezsHcnCUhLG1zXVxOG4ZiI4d/view?usp=drive_link"
+        }
+      ],
+      "media": [
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848284.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848313.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848320.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848331.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848336.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848398.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848403.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848408.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848415.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848428.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848432.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848438.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848446.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848490.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848496.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848621.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848624.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848639.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848647.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848650.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848653.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848686.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848712.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848724.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848763.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848768.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/3la_feen/Screenshot_1770848830.png"
+        }
+      ]
+    },
     {
       "name": "Pharma Bank",
       "cover_image": "assets/covers/pharma_mockup.png",
