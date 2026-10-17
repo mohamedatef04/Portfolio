@@ -125,7 +125,64 @@
         "Skeletonizer"
       ],
       "links": [],
-      "media": []
+      "media": [
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_admin/01_home.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_admin/02_education.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_admin/03_finance.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_admin/04_fee_plans.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_admin/05_payments.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_admin/06_reports.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_admin/07_employees.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_admin/08_hr.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_admin/09_schedules.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_admin/10_meetings.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_admin/11_bus.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_admin/12_live_tracking.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_admin/13_school_store.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_admin/14_ask_me.png"
+        }
+      ]
     },
     {
       "name": "Jiwar Teacher",
@@ -161,7 +218,56 @@
         "Skeletonizer"
       ],
       "links": [],
-      "media": []
+      "media": [
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_teacher/01_home.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_teacher/02_my_class.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_teacher/03_student_details.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_teacher/04_attendance.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_teacher/05_grades.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_teacher/06_exams.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_teacher/07_add_exam.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_teacher/08_weekly_plans.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_teacher/09_lesson_view.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_teacher/10_request_leave.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_teacher/11_class_announcement.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_teacher/12_canteen_menu.png"
+        }
+      ]
     },
     {
       "name": "Jiwar Canteen",
@@ -197,14 +303,64 @@
         "PDF & Printing"
       ],
       "links": [],
-      "media": []
+      "media": [
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_canteen/01_canteen.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_canteen/02_manager.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_canteen/03_live_orders.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_canteen/04_todays_menu.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_canteen/05_add_item.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_canteen/06_refunds.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_canteen/07_shift_stats.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_canteen/08_inventory.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_canteen/09_raw_materials.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_canteen/10_daily_revenue.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_canteen/11_top_items.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_canteen/12_tasks.png"
+        }
+      ]
     },
     {
-      "name": "Jiwar Hub (Student)",
-      "cover_image": "assets/covers/jiwar/student_mockup.png",
-      "short_description": "The student side of Jiwar Hub, published on Google Play, helping students organize their day, learn, and stay connected with their school.",
-      "description": "The Student experience of Jiwar Hub, the educational platform published on Google Play. Students see today's schedule and weekly brief, take online exams, chat with an AI learning assistant, and submit feedback about teachers. A day section adds habits, a focus companion, screen-time balance and app limits, a school wallet, canteen ordering, and live bus tracking. The Jiwar World (Knowledge City, Play City, and Safe Community City) and talent sections make learning more engaging. Built with Flutter, Bloc/Cubit, and Clean Architecture.",
+      "name": "Jiwar Hub",
+      "cover_image": "assets/covers/jiwar/hub_mockup.png",
+      "short_description": "A smart educational platform published on Google Play, with one app for students and parents to stay connected with their school.",
+      "description": "Jiwar Hub is the educational platform of Jiwar Global Systems, published on Google Play. One app serves both students and parents. Students see their day and schedule, take online exams, learn with an AI companion, build habits, track focus and screen balance, use a school wallet, and explore the Jiwar World (Knowledge City, Play City, and Safe Community City), talents, and events. Parents follow each child's attendance and education, submit absence requests, track the school bus live on a map, manage fees and payments, monitor app usage, and chat with teachers and the school. Built with Flutter, Bloc/Cubit, and Clean Architecture, with real-time updates over Socket.IO.",
       "features": [
+        "One app with role-based experiences for students and parents",
         "Today's schedule and weekly learning brief",
         "Online exams and teacher feedback",
         "AI-powered learning assistant",
@@ -214,7 +370,16 @@
         "Live school bus tracking",
         "Jiwar World: Knowledge City, Play City, and Safe Community City",
         "Talent and mind sections",
-        "Push notifications"
+        "Push notifications",
+        "Multi-child support with a per-child context",
+        "Attendance tracking and absence requests",
+        "Live school bus tracking on a map with trip playback",
+        "Education progress and development overview",
+        "Fees, payments, and money management",
+        "Canteen activity",
+        "App usage monitoring and restrictions",
+        "Direct chat with teachers and the school, plus video meetings",
+        "Feedback and comments to the school"
       ],
       "technologies_used": [
         "Flutter",
@@ -231,49 +396,9 @@
         "Mapbox",
         "Syncfusion Charts",
         "Video Player",
-        "Jitsi Meet"
-      ],
-      "links": [
-        {
-          "type": "Google Play",
-          "url": "https://play.google.com/store/apps/details?id=com.jiwar.jiwarhub&hl=en_US"
-        }
-      ],
-      "media": []
-    },
-    {
-      "name": "Jiwar Hub (Parent)",
-      "cover_image": "assets/covers/jiwar/parent_mockup.png",
-      "short_description": "The parent side of Jiwar Hub, published on Google Play, giving parents full visibility into their children's school life.",
-      "description": "The Parent experience of Jiwar Hub, the educational platform published on Google Play. Parents follow each child's attendance and education, submit absence requests, and chat directly with teachers and the school administration. They track the school bus live on a map with trip playback, manage fees and payments, follow canteen activity, and monitor and restrict their children's app usage. Built with Flutter, Bloc/Cubit, and Clean Architecture, with real-time updates over Socket.IO.",
-      "features": [
-        "Multi-child support with a per-child context",
-        "Attendance tracking and absence requests",
-        "Live school bus tracking on a map with trip playback",
-        "Education progress and development overview",
-        "Fees, payments, and money management",
-        "Canteen activity",
-        "App usage monitoring and restrictions",
-        "Direct chat with teachers and the school, plus video meetings",
-        "Feedback and comments to the school",
-        "Push notifications"
-      ],
-      "technologies_used": [
-        "Flutter",
-        "Dart",
-        "Bloc/Cubit",
-        "Clean Architecture",
-        "Dio & Retrofit",
-        "Socket.IO",
-        "get_it & injectable",
-        "Firebase Cloud Messaging",
-        "flutter_secure_storage",
-        "Localization (English/Arabic)",
-        "Hive",
-        "Mapbox",
+        "Jitsi Meet",
         "Geocoding",
-        "Screen Time",
-        "Jitsi Meet"
+        "Screen Time"
       ],
       "links": [
         {
@@ -281,7 +406,84 @@
           "url": "https://play.google.com/store/apps/details?id=com.jiwar.jiwarhub&hl=en_US"
         }
       ],
-      "media": []
+      "media": [
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/01_home.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/02_day.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/03_learn.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/04_talent.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/05_world.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/06_schedule.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/07_habits.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/08_focus.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/09_wallet.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/10_knowledge_city.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/11_events.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/12_event_details.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/13_achievement.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/14_parent_home.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/15_parent_child_statement.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/16_parent_requests.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/17_parent_previous_requests.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/18_parent_education.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_student/19_parent_social_media.png"
+        }
+      ]
     },
     {
       "name": "Jiwar Bus",
@@ -315,7 +517,40 @@
         "Mobile Scanner"
       ],
       "links": [],
-      "media": []
+      "media": [
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_bus/01_today.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_bus/02_start_trip.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_bus/03_route.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_bus/04_route_progress.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_bus/05_route_map.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_bus/06_connect.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_bus/07_chat.png"
+        },
+        {
+          "type": "screenshot",
+          "url": "assets/screenshots/jiwar_bus/08_ask_me.png"
+        }
+      ]
     },
     {
       "name": "Mr. Price",
