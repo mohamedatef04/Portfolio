@@ -59,6 +59,20 @@
   ],
   "experience": [
     {
+      "title": "Flutter Developer",
+      "company": "Jiwar Global Systems",
+      "location": "Egypt",
+      "date_range": "November 2025 - Present",
+      "description_points": [
+        "Develop and maintain the Jiwar Hub product family: Admin, Teacher, Canteen, Student, Parent, and Bus apps, with Jiwar Hub published on Google Play.",
+        "Build features with Clean Architecture and Bloc/Cubit, using get_it and injectable for dependency injection.",
+        "Integrate REST APIs with Dio and Retrofit and real-time updates with Socket.IO, with centralized error handling.",
+        "Implement secure authentication and session handling with flutter_secure_storage and role-based access.",
+        "Deliver bilingual (English/Arabic) pixel-perfect UIs from Figma designs on a shared design system package.",
+        "Collaborate with the team through GitFlow, feature branches, pull requests, and code reviews."
+      ]
+    },
+    {
       "title": "Mentorship Program for 3 months",
       "company": "Omar Ahemd mentorship program",
       "location": "Online",
@@ -76,6 +90,233 @@
     }
   ],
   "projects": [
+    {
+      "name": "Jiwar Admin",
+      "cover_image": "assets/covers/jiwar/admin_mockup.png",
+      "short_description": "The school management app of the Jiwar platform, giving administrators one place to run finance, academics, people, transport, and the canteen.",
+      "description": "Jiwar Admin is the management application of the Jiwar Hub educational platform by Jiwar Global Systems. It gives school administrators full control over daily operations: a complete finance module (fee plans, invoices, payments, cashier, discounts, arrears, expenses, journal, and reports), academic management (academic structure, curriculum, schedules, daily and weekly plans, exams, enrollments, and promotion), people management with bulk import, school bus and canteen oversight, trips and activities, and a school store. It also includes real-time chat, broadcasts, video meetings, staff evaluation, and an AI assistant. The app is built on a shared Jiwar design system package and follows Clean Architecture with Bloc/Cubit.",
+      "features": [
+        "Complete finance module: fee plans, invoices, payments, cashier, discounts, arrears, expenses, journal, and reports",
+        "Academic management: structure, curriculum, schedules, daily and weekly plans, exams, enrollments, and promotion",
+        "Students, teachers, and mentors management with bulk import",
+        "School bus and canteen administration",
+        "Trips, activities, marketplace, and school store",
+        "Real-time chat, broadcasts, and video meetings (Jitsi)",
+        "Staff evaluation and an AI assistant",
+        "PDF generation and printing for reports and invoices",
+        "Built on the shared jiwar_shared design system package",
+        "Bilingual (English/Arabic) UI"
+      ],
+      "technologies_used": [
+        "Flutter",
+        "Dart",
+        "Bloc/Cubit",
+        "Clean Architecture",
+        "Dio & Retrofit",
+        "Socket.IO",
+        "get_it & injectable",
+        "Firebase Cloud Messaging",
+        "flutter_secure_storage",
+        "Localization (English/Arabic)",
+        "Hive",
+        "Jitsi Meet",
+        "flutter_map",
+        "PDF & Printing",
+        "Skeletonizer"
+      ],
+      "links": [],
+      "media": []
+    },
+    {
+      "name": "Jiwar Teacher",
+      "cover_image": "assets/covers/jiwar/teacher_mockup.png",
+      "short_description": "The teacher app of the Jiwar platform for managing classes, attendance, exams, grades, and communication with students and parents.",
+      "description": "Jiwar Teacher is the teacher application of the Jiwar Hub educational platform. Teachers manage their classes, take student attendance, follow their schedule, create weekly plans and lesson exams, record grades and evaluations, and post class announcements. It also covers staff attendance with monthly reports, HR requests, canteen access, real-time chat and video meetings, and the Jiwar World learning spaces (Knowledge City, Play City, and Safe Community City). Built with Flutter, Bloc/Cubit, and Clean Architecture on top of the shared Jiwar design system.",
+      "features": [
+        "My Class: class overview and student attendance",
+        "Daily schedule and weekly plans",
+        "Exams, lesson exams, and grades",
+        "Student evaluation and class announcements",
+        "Staff attendance with monthly reports",
+        "HR requests",
+        "Canteen access",
+        "Real-time chat and video meetings",
+        "Jiwar World: Knowledge City, Play City, and Safe Community City",
+        "AI assistant and push notifications"
+      ],
+      "technologies_used": [
+        "Flutter",
+        "Dart",
+        "Bloc/Cubit",
+        "Clean Architecture",
+        "Dio & Retrofit",
+        "Socket.IO",
+        "get_it & injectable",
+        "Firebase Cloud Messaging",
+        "flutter_secure_storage",
+        "Localization (English/Arabic)",
+        "Jitsi Meet",
+        "Geolocator",
+        "QR Code",
+        "Skeletonizer"
+      ],
+      "links": [],
+      "media": []
+    },
+    {
+      "name": "Jiwar Canteen",
+      "cover_image": "assets/covers/jiwar/canteen_mockup.png",
+      "short_description": "The canteen and restaurant point-of-sale app of the Jiwar platform, covering orders, kitchen, menu, inventory, and cash drawer sessions.",
+      "description": "Jiwar Canteen is the school canteen and restaurant application of the Jiwar Hub platform. Canteen staff manage the menu, receive and prepare student orders through a kitchen view, make counter sales with QR code scanning, and run cash drawer sessions. The app also handles inventory and settlements, raw materials, suppliers, refunds, and student bans (for example, restricting items for specific students). It updates in real time with Socket.IO and is built with Flutter, Bloc/Cubit, and Clean Architecture.",
+      "features": [
+        "Menu management",
+        "Order management and a kitchen display for preparing orders",
+        "Counter sales with QR code scanning",
+        "Cash drawer sessions",
+        "Inventory, settlements, and raw materials",
+        "Suppliers management",
+        "Refunds",
+        "Student bans and restrictions",
+        "Real-time order updates with Socket.IO",
+        "Bilingual (English/Arabic) UI"
+      ],
+      "technologies_used": [
+        "Flutter",
+        "Dart",
+        "Bloc/Cubit",
+        "Clean Architecture",
+        "Dio & Retrofit",
+        "Socket.IO",
+        "get_it & injectable",
+        "Firebase Cloud Messaging",
+        "flutter_secure_storage",
+        "Localization (English/Arabic)",
+        "GoRouter",
+        "Hive",
+        "Mobile Scanner",
+        "PDF & Printing"
+      ],
+      "links": [],
+      "media": []
+    },
+    {
+      "name": "Jiwar Hub (Student)",
+      "cover_image": "assets/covers/jiwar/student_mockup.png",
+      "short_description": "The student side of Jiwar Hub, published on Google Play, helping students organize their day, learn, and stay connected with their school.",
+      "description": "The Student experience of Jiwar Hub, the educational platform published on Google Play. Students see today's schedule and weekly brief, take online exams, chat with an AI learning assistant, and submit feedback about teachers. A day section adds habits, a focus companion, screen-time balance and app limits, a school wallet, canteen ordering, and live bus tracking. The Jiwar World (Knowledge City, Play City, and Safe Community City) and talent sections make learning more engaging. Built with Flutter, Bloc/Cubit, and Clean Architecture.",
+      "features": [
+        "Today's schedule and weekly learning brief",
+        "Online exams and teacher feedback",
+        "AI-powered learning assistant",
+        "Habits, focus companion, and screen-time balance",
+        "App limits",
+        "School wallet and canteen ordering",
+        "Live school bus tracking",
+        "Jiwar World: Knowledge City, Play City, and Safe Community City",
+        "Talent and mind sections",
+        "Push notifications"
+      ],
+      "technologies_used": [
+        "Flutter",
+        "Dart",
+        "Bloc/Cubit",
+        "Clean Architecture",
+        "Dio & Retrofit",
+        "Socket.IO",
+        "get_it & injectable",
+        "Firebase Cloud Messaging",
+        "flutter_secure_storage",
+        "Localization (English/Arabic)",
+        "Hive",
+        "Mapbox",
+        "Syncfusion Charts",
+        "Video Player",
+        "Jitsi Meet"
+      ],
+      "links": [
+        {
+          "type": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.jiwar.jiwarhub&hl=en_US"
+        }
+      ],
+      "media": []
+    },
+    {
+      "name": "Jiwar Hub (Parent)",
+      "cover_image": "assets/covers/jiwar/parent_mockup.png",
+      "short_description": "The parent side of Jiwar Hub, published on Google Play, giving parents full visibility into their children's school life.",
+      "description": "The Parent experience of Jiwar Hub, the educational platform published on Google Play. Parents follow each child's attendance and education, submit absence requests, and chat directly with teachers and the school administration. They track the school bus live on a map with trip playback, manage fees and payments, follow canteen activity, and monitor and restrict their children's app usage. Built with Flutter, Bloc/Cubit, and Clean Architecture, with real-time updates over Socket.IO.",
+      "features": [
+        "Multi-child support with a per-child context",
+        "Attendance tracking and absence requests",
+        "Live school bus tracking on a map with trip playback",
+        "Education progress and development overview",
+        "Fees, payments, and money management",
+        "Canteen activity",
+        "App usage monitoring and restrictions",
+        "Direct chat with teachers and the school, plus video meetings",
+        "Feedback and comments to the school",
+        "Push notifications"
+      ],
+      "technologies_used": [
+        "Flutter",
+        "Dart",
+        "Bloc/Cubit",
+        "Clean Architecture",
+        "Dio & Retrofit",
+        "Socket.IO",
+        "get_it & injectable",
+        "Firebase Cloud Messaging",
+        "flutter_secure_storage",
+        "Localization (English/Arabic)",
+        "Hive",
+        "Mapbox",
+        "Geocoding",
+        "Screen Time",
+        "Jitsi Meet"
+      ],
+      "links": [
+        {
+          "type": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.jiwar.jiwarhub&hl=en_US"
+        }
+      ],
+      "media": []
+    },
+    {
+      "name": "Jiwar Bus",
+      "cover_image": "assets/covers/jiwar/bus_mockup.png",
+      "short_description": "The school bus app of the Jiwar platform for drivers and supervisors, with live trip tracking, student rosters, and QR check-in.",
+      "description": "Jiwar Bus is the transportation application of the Jiwar Hub platform, with two roles: Driver and Supervisor. Drivers see today's trips, start a trip, and share their live GPS location, which parents and students follow on the map in real time over Socket.IO. Supervisors manage the trip roster and check students in and out with QR code scanning. Both roles have staff attendance, HR requests, and in-app chat. Built with Flutter, Bloc/Cubit, Clean Architecture, and Mapbox.",
+      "features": [
+        "Two roles: Driver and Supervisor",
+        "Today's trips and trip start",
+        "Live GPS location sharing over Socket.IO",
+        "Trip map with the route",
+        "Student roster with QR code check-in and check-out",
+        "Staff attendance",
+        "HR requests with request details and forms",
+        "In-app chat and video meetings"
+      ],
+      "technologies_used": [
+        "Flutter",
+        "Dart",
+        "Bloc/Cubit",
+        "Clean Architecture",
+        "Dio & Retrofit",
+        "Socket.IO",
+        "get_it & injectable",
+        "Firebase Cloud Messaging",
+        "flutter_secure_storage",
+        "Localization (English/Arabic)",
+        "GoRouter",
+        "Mapbox",
+        "Geolocator",
+        "Mobile Scanner"
+      ],
+      "links": [],
+      "media": []
+    },
     {
       "name": "Mr. Price",
       "cover_image": "assets/screenshots/mr_price/mockup.jpeg",
